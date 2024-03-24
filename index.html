@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<h2>Каталог выбора тортов и начинок</h2>
+
+	<h3>Выберите тип торта</h3>
+	<div class="caketype">
+		<select id="torttype"class = "cake" >
+			<option id="tort0" class="cake" value="600"> Муссовый торт </option>
+			<option id="tort1" class="cake" value="400"> Бисквитный торт </option>
+			<option id="tort2" class="cake" value="550"> Вафельный торт </option>
+			<option id="tort3" class="cake" value="350"> Творожный торт </option>
+	</select>
+</div>
+
+
+
+		<h3>Выберите размер торта</h3>
+	<div class="cakesize">
+		<select id="tortsize"class = "cake" >
+			<option id="tort4" class="cake" value="200"> Одноярусный</option>
+			<option id="tort5" class="cake" value="500"> Двухъярусный</option>
+			<option id="tort6" class="cake" value="800"> Трёхъярусный</option>
+	</select>
+</div>
+
+
+
+		<h3>Выберите форму торта</h3>
+	<div class="cakeform">
+		<select id="tortform"class = "cake" >
+			<option id="tort7" class="cake" value="150"> Круглый</option>
+			<option id="tort8" class="cake" value="175"> Овальный</option>
+			<option id="tort9" class="cake" value="100"> Треугольный</option>
+			<option id="tort10" class="cake" value="200"> Квадратный</option>
+	</select>
+</div>
+
+
+
+
+<h3>Выберите начинку торта</h3>
+
+<input id="cont0" type="checkbox"class="cake" cost="500">
+<label>Ореховый шейк</label>
+
+<input id="cont1" type="checkbox"class="cake" cost="1200">
+<label>Клубника со сливками</label>
+
+<input id="cont2" type="checkbox"class="cake" cost="3400">
+<label>Бельгиский шоколад</label>
+
+<input id="cont3" type="checkbox"class="cake" cost="2300">
+<label>Фруктовый микс</label>
+
+<input id="cont4" type="checkbox"class="cake" cost="900">
+<label>Солёная карамель</label>
+
+<input id="cont5" type="checkbox"class="cake" cost="1000">
+<label>Сырный крем</label>
+
+
+
+
+<h3>Нарисуйте оформление торта</h3>
+<canvas id="canv" width="580" height="360"></canvas>
+<input type="color" id="color">
+<h3>Итоговая стоймость торта: <span id="totalcost"></span></h3>
+<button id="result">Счет</button>
+<h3>Торты в наличии</h3>
+<img src="cake1.avif" width="400" height="250">
+<input id="cont12" type="checkbox">
+<label> Нежность. Стоимость: 1300</label>
+
+<img src="cake2.jpg" width="400" height="250">
+<input id="cont13" type="checkbox">
+<label> Фантазия. Стоимость: 2400</label>
+
+<h3>Выберите тип доставки</h3>
+<input type="radio" name="deliver">Самовызов
+<input type="radio" name="deliver">Доставка
+
+<p><input name="yourname" type="text" placeholder="Ваше имя"></p>
+<p><input name="telephone" type="text" placeholder="Ваш телефон"></p>
+<p><input name="adress" type="text" placeholder="Ваш адрес"></p>
+<input type="submit" value="Отправить">
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
